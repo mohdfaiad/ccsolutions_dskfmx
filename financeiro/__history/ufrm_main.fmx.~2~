@@ -1,0 +1,4 @@
+inherited frm_main_default1: Tfrm_main_default1
+  Caption = 'M'#243'dulo Financeiro - CCS.'
+  DesignerMasterStyle = 0
+end

@@ -1,0 +1,4 @@
+inherited frm_main_default1: Tfrm_main_default1
+  Caption = 'frm_main_default1'
+  DesignerMasterStyle = 0
+end

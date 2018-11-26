@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018/11/26 16:01:20.250,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 16:05:07.578,C:\development\sources\ccsolutions_mob\financeiro\ufrm_financeiro.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 16:05:07.578,C:\development\sources\ccsolutions_mob\financeiro\ufrm_financeiro.fmx=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/11/26 16:05:20.303,C:\development\sources\ccsolutions_mob\financeiro\frm_financeiro.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/11/26 16:05:26.434,C:\development\sources\ccsolutions_mob\financeiro\financeiro.dproj=C:\development\sources\ccsolutions_mob\financeiro\frm_financeiro.dproj</Transaction>
+    <Transaction>2018/11/26 16:06:18.920,=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 16:06:54.870,C:\development\sources\ccsolutions_mob\models\desktop\ufrm_main_default.fmx=C:\development\sources\ccsolutions_mob\financeiro\Unit1.fmx</Transaction>
+    <Transaction>2018/11/26 16:06:54.870,C:\development\sources\ccsolutions_mob\models\desktop\ufrm_main_default.pas=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 16:15:52.010,=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 16:15:59.778,C:\development\sources\ccsolutions_mob\financeiro\ufrm_main.fmx=C:\development\sources\ccsolutions_mob\financeiro\Unit1.fmx</Transaction>
+    <Transaction>2018/11/26 16:15:59.778,C:\development\sources\ccsolutions_mob\financeiro\ufrm_main.pas=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 17:17:51.479,=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 17:18:04.503,C:\development\sources\ccsolutions_mob\models\desktop\ufrm_default.fmx=C:\development\sources\ccsolutions_mob\financeiro\Unit1.fmx</Transaction>
+    <Transaction>2018/11/26 17:18:04.503,C:\development\sources\ccsolutions_mob\models\desktop\ufrm_default.pas=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+    <Transaction>2018/11/26 17:36:29.432,=C:\development\sources\ccsolutions_mob\financeiro\Unit1.pas</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
+</BorlandProject>

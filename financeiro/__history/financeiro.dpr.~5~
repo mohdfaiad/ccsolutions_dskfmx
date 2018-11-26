@@ -1,0 +1,16 @@
+program financeiro;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  ufrm_financeiro in 'ufrm_financeiro.pas' {frm_financeiro},
+  ufrm_main_default in '..\models\desktop\ufrm_main_default.pas' {frm_main_default};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(Tfrm_financeiro, frm_financeiro);
+  Application.CreateForm(Tfrm_main_default, frm_main_default);
+  Application.Run;
+end.
