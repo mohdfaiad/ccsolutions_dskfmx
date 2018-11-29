@@ -318,16 +318,16 @@
             <Form>frm_financeiro</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\models\desktop\ufrm_main_default.pas">
-            <Form>frm_main_default</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="ufrm_main.pas">
             <Form>frm_main</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\models\desktop\ufrm_default.pas">
+        <DCCReference Include="..\models\ufrm_default.pas">
             <Form>frm_default</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\models\ufrm_main_default.pas">
+            <Form>frm_main_default</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

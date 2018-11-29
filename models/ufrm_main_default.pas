@@ -6,11 +6,11 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Menus,
   FMX.Controls.Presentation, FMX.StdCtrls, System.ImageList, FMX.ImgList,
-  System.Actions, FMX.ActnList;
+  System.Actions, FMX.ActnList, FMX.Objects;
 
 type
   Tfrm_main_default = class(TForm)
-    StatusBar1: TStatusBar;
+    StatusBar_1: TStatusBar;
     MainMenu_1: TMainMenu;
     miSistema: TMenuItem;
     miCadastros: TMenuItem;
@@ -22,6 +22,7 @@ type
     ActionList_1: TActionList;
     Action_sair: TAction;
     miSair: TMenuItem;
+    Image_1: TImage;
     procedure Action_sairExecute(Sender: TObject);
   private
     { Private declarations }

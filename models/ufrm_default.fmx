@@ -37,7 +37,7 @@ object frm_default: Tfrm_default
       Size.Width = 1024.000000000000000000
       Size.Height = 654.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       TabPosition = PlatformDefault
       Sizes = (
@@ -49,13 +49,15 @@ object frm_default: Tfrm_default
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 70.000000000000000000
         Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'Pesquisar'
+        ExplicitSize.cx = 70.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
         object ListBox_1: TListBox
           Align = Client
           Margins.Left = 5.000000000000000000
@@ -78,13 +80,83 @@ object frm_default: Tfrm_default
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 87.000000000000000000
         Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'Manuten'#231#227'o'
+        ExplicitSize.cx = 87.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object TabControl_2: TTabControl
+          Align = Bottom
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 1014.000000000000000000
+          Size.Height = 567.000000000000000000
+          Size.PlatformDefault = False
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = PlatformDefault
+          Sizes = (
+            1014s
+            541s)
+          object tbiDados: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = True
+            Size.Width = 54.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'Dados'
+          end
+        end
+        object Label1: TLabel
+          Position.X = 5.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 125.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'ID'
+          TabOrder = 2
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 1
+            Position.Y = 18.000000000000000000
+            Size.Width = 125.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label2: TLabel
+          Position.X = 133.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 125.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Dt. Cad.'
+          TabOrder = 1
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 1
+            Position.Y = 18.000000000000000000
+            Size.Width = 125.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
       end
     end
   end
