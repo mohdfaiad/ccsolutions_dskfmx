@@ -1,0 +1,144 @@
+inherited frm_main: Tfrm_main
+  Caption = 'M'#243'dulo Backup - CCS.'
+  DesignerMasterStyle = 0
+  inherited MultiViewMain: TMultiView
+    Size.Width = 350.000000000000000000
+    inherited Layout_menu_1: TLayout
+      inherited ListBox_menu_1: TListBox
+        Viewport.Width = 300.000000000000000000
+        Viewport.Height = 430.000000000000000000
+        inherited ListBoxItem_perfil: TListBoxItem
+          inherited Rectangle_perfil_1: TRectangle
+            inherited GridPanelLayout_1: TGridPanelLayout
+              inherited Label_nome: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Elton Bahia'
+              end
+              inherited Label_email: TLabel
+                Text = 'eltonbahiabc@hotmail.com'
+              end
+            end
+          end
+        end
+        object ListBoxItem_espaco: TListBoxItem
+          Position.Y = 150.000000000000000000
+          Size.Width = 296.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object GridPanelLayout_espaco: TGridPanelLayout
+            Align = Client
+            Size.Width = 296.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 100.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = ProgressBar_1
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = GridPanelLayout_espaco_utilizado
+                Row = 0
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object ProgressBar_1: TProgressBar
+              Align = Client
+              Orientation = Horizontal
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 3.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 17.000000000000000000
+              Size.Width = 276.000000000000000000
+              Size.Height = 5.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'progressbarstyle'
+              Value = 35.000000000000000000
+            end
+            object GridPanelLayout_espaco_utilizado: TGridPanelLayout
+              Align = Client
+              Size.Width = 296.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              ColumnCollection = <
+                item
+                  Value = 50.000000000000000000
+                end
+                item
+                  Value = 50.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = Label1
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = Label2
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end
+                item
+                  SizeStyle = Auto
+                end>
+              object Label1: TLabel
+                Align = Client
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 128.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Espa'#231'o Usado'
+                TabOrder = 0
+              end
+              object Label2: TLabel
+                Align = Client
+                Opacity = 0.600000023841857900
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Size.Width = 128.000000000000000000
+                Size.Height = 20.000000000000000000
+                Size.PlatformDefault = False
+                Text = '2.4 Gb de 1 TB'
+                TabOrder = 1
+              end
+            end
+          end
+        end
+        object ListBoxItem_meus_arquivos: TListBoxItem
+          Position.Y = 200.000000000000000000
+          TabOrder = 2
+          Text = 'Meus Arquivos'
+          OnClick = ListBoxItem_meus_arquivosClick
+        end
+      end
+    end
+  end
+end

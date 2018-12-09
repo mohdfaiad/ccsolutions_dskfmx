@@ -1,0 +1,7 @@
+unit uclass_aws_connection;
+
+interface
+
+implementation
+
+end.

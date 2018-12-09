@@ -1,0 +1,35 @@
+unit ufrm_main_base;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs, FMX.Layouts, FMX.Controls.Presentation, FMX.StdCtrls;
+
+type
+  Tfrm_main_base = class(TForm)
+    Layout_1: TLayout;
+    ToolBar_Top1: TToolBar;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_main_base: Tfrm_main_base;
+
+implementation
+
+{$R *.fmx}
+
+end.

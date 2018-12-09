@@ -1,0 +1,70 @@
+unit AWS.Connection;
+
+interface
+
+uses
+  System.SysUtils,
+
+  Data.Cloud.CloudAPI,
+  Data.Cloud.AmazonAPI;
+
+type
+  TAWSConnection = class
+  private
+    AWSConn:              TAmazonConnectionInfo;
+
+    const AWSACCESSKEYID  = 'AKIAJRW2ONJTUT2C26PQ';
+    const AWSSECRETKEY    = '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';
+
+    procedure ConfigurarAWSConn;
+  protected
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    function  GetAWSConn: TAmazonConnectionInfo;
+  published
+
+  end;
+
+implementation
+
+{ TAWSConnection }
+
+destructor TAWSConnection.Destroy;
+begin
+  FreeAndNil(AWSConn);
+  inherited;
+end;
+
+function TAWSConnection.GetAWSConn: TAmazonConnectionInfo;
+begin
+  Result := AWSConn;
+end;
+
+procedure TAWSConnection.ConfigurarAWSConn;
+begin
+  AWSConn.AccountKey          := AWSACCESSKEYID;
+  AWSConn.AccountName         := AWSSECRETKEY;
+  AWSConn.ConsistentRead      := True;
+  AWSConn.MFAAuthCode         := '';
+  AWSConn.MFASerialNumber     := '';
+  AWSConn.Protocol            := 'http';
+  AWSConn.QueueEndpoint       := 'queue.amazonaws.com';
+  AWSConn.Region              := amzrUSEast1;
+  AWSConn.RequestProxyHost    := '';
+  AWSConn.RequestProxyPort    := 0;
+  AWSConn.StorageEndpoint     := 's3.amazonaws.com';
+  AWSConn.TableEndpoint       := 'sdb.amazonaws.com';
+  AWSConn.Tag                 := 0;
+  AWSConn.UseDefaultEndpoints := True;
+end;
+
+constructor TAWSConnection.Create;
+begin
+  AWSConn := TAmazonConnectionInfo.Create(Nil);
+  ConfigurarAWSConn();
+end;
+
+end.

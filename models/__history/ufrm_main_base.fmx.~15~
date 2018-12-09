@@ -1,0 +1,36 @@
+object frm_main_base: Tfrm_main_base
+  Left = 0
+  Top = 0
+  Caption = 'Main Base'
+  ClientHeight = 480
+  ClientWidth = 640
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout_1: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar_Top1: TToolBar
+      Size.Width = 640.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object ActionList_1: TActionList
+    Images = ImageList_1
+    Left = 344
+    Top = 232
+  end
+  object ImageList_1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 312
+    Top = 232
+  end
+end

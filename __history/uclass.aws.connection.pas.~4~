@@ -1,0 +1,23 @@
+unit uclass.aws.connection;
+
+interface
+
+uses
+  Data.Cloud.CloudAPI, Data.Cloud.AmazonAPI;
+
+type
+  Tclass.aws.connection = class
+  private
+    { private declarations }
+  protected
+    { protected declarations }
+  public
+    { public declarations }
+
+  published
+    { published declarations }
+  end;
+
+implementation
+
+end.

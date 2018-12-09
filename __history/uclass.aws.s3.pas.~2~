@@ -1,0 +1,10 @@
+unit uclass.aws.s3;
+
+interface
+
+uses
+  Data.Cloud.CloudAPI, Data.Cloud.AmazonAPI;
+
+implementation
+
+end.

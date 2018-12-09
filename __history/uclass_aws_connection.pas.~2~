@@ -1,0 +1,10 @@
+unit uclass_aws_connection;
+
+interface
+
+uses
+  TAmazonConnectionInfo;
+
+implementation
+
+end.

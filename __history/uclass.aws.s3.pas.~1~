@@ -1,0 +1,7 @@
+unit uclass.aws.s3;
+
+interface
+
+implementation
+
+end.

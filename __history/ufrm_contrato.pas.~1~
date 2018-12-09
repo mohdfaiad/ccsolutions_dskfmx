@@ -1,0 +1,25 @@
+unit ufrm_contrato;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  ufrm_default, FMX.TabControl;
+
+type
+  Tfrm_default1 = class(Tfrm_default)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_default1: Tfrm_default1;
+
+implementation
+
+{$R *.fmx}
+
+end.

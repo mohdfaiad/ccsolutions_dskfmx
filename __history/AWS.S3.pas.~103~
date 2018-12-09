@@ -1,0 +1,59 @@
+unit AWS.S3;
+
+interface
+
+uses
+  System.Classes,
+  System.SysUtils,
+
+  Data.Cloud.CloudAPI,
+  Data.Cloud.AmazonAPI,
+
+  FMX.Dialogs,
+  FMX.ListBox,
+
+  AWS.Connection;
+
+type
+  TAWSS3 = class(TAWSConnection)
+  private
+    const BUCKET_NAME = 'ccs-bucket-use1';
+    var   OBJECT_NAME : string;
+
+  protected
+
+  public
+    procedure ArquivoUpload;
+    procedure ArquivoDownload(ListBox: TListBoxItem);
+    procedure ArquivoLista;
+    procedure BucketList;
+
+  published
+
+  end;
+
+implementation
+
+{ TAWSS3 }
+
+procedure TAWSS3.ArquivoDownload(ListBox: TListBoxItem);
+begin
+//
+end;
+
+procedure TAWSS3.ArquivoLista;
+begin
+//
+end;
+
+procedure TAWSS3.ArquivoUpload;
+begin
+//
+end;
+
+procedure TAWSS3.BucketList;
+begin
+//
+end;
+
+end.

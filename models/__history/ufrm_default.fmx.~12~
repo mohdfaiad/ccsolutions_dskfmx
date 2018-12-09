@@ -1,0 +1,13 @@
+object frm_default: Tfrm_default
+  Left = 0
+  Top = 0
+  Caption = 'Form Default'
+  ClientHeight = 726
+  ClientWidth = 1024
+  Position = Designed
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end
