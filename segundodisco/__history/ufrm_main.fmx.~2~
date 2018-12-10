@@ -11,18 +11,16 @@ inherited frm_main: Tfrm_main
           inherited Rectangle_perfil_1: TRectangle
             inherited GridPanelLayout_1: TGridPanelLayout
               inherited Label_nome: TLabel
-                StyledSettings = [Family, FontColor]
+                Margins.Top = 3.000000000000000000
                 Margins.Bottom = 3.000000000000000000
-                Size.Height = 17.000000000000000000
-                TextSettings.Font.Size = 11.000000000000000000
+                Size.Height = 19.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
                 Text = 'Elton Bahia'
               end
               inherited Label_email: TLabel
-                StyledSettings = [Family, Style, FontColor]
                 Margins.Top = 3.000000000000000000
-                Size.Height = 17.000000000000000000
-                TextSettings.Font.Size = 11.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Size.Height = 19.000000000000000000
                 Text = 'eltonbahiabc@hotmail.com'
               end
             end
@@ -114,32 +112,26 @@ inherited frm_main: Tfrm_main
                 end>
               object Label1: TLabel
                 Align = Client
-                StyledSettings = [Family, FontColor]
+                StyledSettings = [Family, Size, FontColor]
                 Margins.Left = 10.000000000000000000
                 Margins.Top = 5.000000000000000000
                 Margins.Right = 10.000000000000000000
-                Margins.Bottom = 5.000000000000000000
                 Size.Width = 128.000000000000000000
-                Size.Height = 15.000000000000000000
+                Size.Height = 20.000000000000000000
                 Size.PlatformDefault = False
-                TextSettings.Font.Size = 11.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
                 Text = 'Espa'#231'o Usado'
                 TabOrder = 0
               end
               object Label2: TLabel
                 Align = Client
-                StyledSettings = [Family, Style, FontColor]
                 Opacity = 0.600000023841857900
                 Margins.Left = 10.000000000000000000
                 Margins.Top = 5.000000000000000000
                 Margins.Right = 10.000000000000000000
-                Margins.Bottom = 5.000000000000000000
                 Size.Width = 128.000000000000000000
-                Size.Height = 15.000000000000000000
+                Size.Height = 20.000000000000000000
                 Size.PlatformDefault = False
-                TextSettings.Font.Size = 11.000000000000000000
-                TextSettings.HorzAlign = Trailing
                 Text = '2.4 Gb de 1 TB'
                 TabOrder = 1
               end

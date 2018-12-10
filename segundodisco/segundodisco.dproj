@@ -6,7 +6,7 @@
         <MainSource>segundodisco.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Android</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>1119</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -366,8 +366,8 @@
             <Form>frm_contrato</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\ufrm_documento.pas">
-            <Form>frm_documento</Form>
+        <DCCReference Include="..\ufrm_arquivo.pas">
+            <Form>frm_arquivo</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="ufrm_main.pas">
@@ -451,6 +451,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
+                    <Platform Name="Android">
+                        <RemoteName>styles.xml</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
@@ -478,8 +484,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\libsegundodisco.so" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Android">
+                        <RemoteName>libsegundodisco.so</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -507,8 +514,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
                     <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -518,9 +526,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
-                    <Platform Name="Android">
-                        <RemoteName>ic_launcher.png</RemoteName>
+                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteName>ccsbackup.icns</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -529,9 +537,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource">
-                    <Platform Name="OSX32">
-                        <RemoteName>ccsbackup.icns</RemoteName>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -540,20 +547,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Portrait~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\libsegundodisco.so" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Android">
-                        <RemoteName>libsegundodisco.so</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -574,14 +570,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2436x1125.png" Configuration="Debug" Class="iPhone_Launch2436">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Landscape-812h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -630,6 +626,11 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
@@ -668,8 +669,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
-                    <Platform Name="Android">
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -678,9 +680,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -694,15 +696,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="iOSSimulator\Debug\ccsbackup.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+                    <Platform Name="Android">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -730,6 +731,11 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
                     <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -763,12 +769,6 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29">
                     <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\ccsolutions_dskfmx\segundodisco\Android\Debug\styles-v21.xml" Configuration="Debug" Class="AndroidSplashStylesV21">
-                    <Platform Name="Android">
-                        <RemoteName>styles.xml</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

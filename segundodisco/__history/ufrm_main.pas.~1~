@@ -27,7 +27,7 @@ uses
 
   ufrm_main_base_menu,
 
-  ufrm_arquivo;
+  ufrm_documento;
 
 type
   Tfrm_main = class(Tfrm_main_base_menu)
@@ -75,7 +75,7 @@ end;
 procedure Tfrm_main.ListBoxItem_meus_arquivosClick(Sender: TObject);
 begin
   inherited;
-  AbrirForm(Tfrm_arquivo);
+  AbrirForm(Tfrm_documento);
 end;
 
 initialization

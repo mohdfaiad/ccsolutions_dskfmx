@@ -11,7 +11,7 @@ uses
   ufrm_login in '..\ufrm_login.pas' {frm_login},
   ufrm_default_base in '..\models\ufrm_default_base.pas' {frm_default_base},
   ufrm_contrato in '..\ufrm_contrato.pas' {frm_contrato},
-  ufrm_arquivo in '..\ufrm_arquivo.pas' {frm_arquivo},
+  ufrm_documento in '..\ufrm_documento.pas' {frm_documento},
   ufrm_main in 'ufrm_main.pas' {frm_main};
 
 {$R *.res}

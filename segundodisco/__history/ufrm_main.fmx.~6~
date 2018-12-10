@@ -139,7 +139,6 @@ inherited frm_main: Tfrm_main
                 Size.Height = 15.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 11.000000000000000000
-                TextSettings.HorzAlign = Trailing
                 Text = '2.4 Gb de 1 TB'
                 TabOrder = 1
               end
