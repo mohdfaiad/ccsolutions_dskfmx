@@ -23,8 +23,9 @@ uses
   FMX.ListBox,
   FMX.ImgList,
   FMX.ActnList,
+  FMX.Objects,
 
-  ufrm_main_base, FMX.Objects;
+  ufrm_main_base;
 
 type
   Tfrm_main_base_menu = class(Tfrm_main_base)

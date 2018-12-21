@@ -23,19 +23,14 @@ uses
   FMX.Grid,
   FMX.Layouts,
   FMX.ListBox,
-  FMX.Edit, FMX.ListView.Types, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.ListView, System.Actions, FMX.ActnList,
-  System.ImageList, FMX.ImgList;
+  FMX.Edit;
 
 type
   Tfrm_default_base = class(TForm)
+    tbctrlForm: TTabControl;
+    TabItem_pesquisar: TTabItem;
+    TabItem_manutencao: TTabItem;
     lytForm: TLayout;
-    ActionList_1: TActionList;
-    ImageList_1: TImageList;
-    Action_primeiro: TAction;
-    Action_anterior: TAction;
-    Action3: TAction;
-    Action4: TAction;
   private
     { Private declarations }
   public

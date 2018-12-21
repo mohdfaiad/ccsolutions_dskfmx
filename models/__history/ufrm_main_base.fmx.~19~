@@ -4,7 +4,6 @@ object frm_main_base: Tfrm_main_base
   Caption = 'Main Base'
   ClientHeight = 726
   ClientWidth = 1024
-  Fill.Kind = Solid
   WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -41,13 +40,13 @@ object frm_main_base: Tfrm_main_base
   end
   object ActionList_1: TActionList
     Images = ImageList_1
-    Left = 72
-    Top = 72
+    Left = 344
+    Top = 232
   end
   object ImageList_1: TImageList
     Source = <>
     Destination = <>
-    Left = 40
-    Top = 72
+    Left = 312
+    Top = 232
   end
 end

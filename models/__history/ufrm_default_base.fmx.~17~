@@ -4,7 +4,6 @@ object frm_default_base: Tfrm_default_base
   Caption = 'Form Default'
   ClientHeight = 726
   ClientWidth = 1024
-  Fill.Kind = Solid
   Position = Designed
   WindowState = wsMaximized
   FormFactor.Width = 320

@@ -1,0 +1,22 @@
+program contrato;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  ufrm_contrato in 'ufrm_contrato.pas' {Form1},
+  ufrm_default_base in '..\models\ufrm_default_base.pas' {frm_default_base},
+  ufrm_main_base in '..\models\ufrm_main_base.pas' {frm_main_base},
+  ufrm_main_base_menu in '..\models\ufrm_main_base_menu.pas' {frm_main_base_menu},
+  ufrm_main_default in '..\models\ufrm_main_default.pas' {frm_main_default};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tfrm_default_base, frm_default_base);
+  Application.CreateForm(Tfrm_main_base, frm_main_base);
+  Application.CreateForm(Tfrm_main_base_menu, frm_main_base_menu);
+  Application.CreateForm(Tfrm_main_default, frm_main_default);
+  Application.Run;
+end.

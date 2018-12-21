@@ -1,0 +1,158 @@
+object frm_default_base: Tfrm_default_base
+  Left = 0
+  Top = 0
+  Caption = 'Form Default'
+  ClientHeight = 726
+  ClientWidth = 1024
+  Position = Designed
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lytForm: TLayout
+    Align = Client
+    Size.Width = 1024.000000000000000000
+    Size.Height = 726.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object tbctrlForm: TTabControl
+      Align = Client
+      Size.Width = 1024.000000000000000000
+      Size.Height = 686.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = Top
+      Sizes = (
+        1024s
+        660s
+        1024s
+        660s)
+      object TabItem_pesquisar: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 70.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Pesquisar'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object ListView_1: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 1018.000000000000000000
+          Size.Height = 654.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object TabItem_manutencao: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 87.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Manuten'#231#227'o'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object TabControl1: TTabControl
+          Align = Client
+          Size.Width = 1024.000000000000000000
+          Size.Height = 610.000000000000000000
+          Size.PlatformDefault = False
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = PlatformDefault
+          Sizes = (
+            1024s
+            584s)
+          object TabItem_dados: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = True
+            Size.Width = 54.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'Dados'
+          end
+        end
+        object Panel1: TPanel
+          Align = Top
+          Size.Width = 1024.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+    end
+    object ToolBar1: TToolBar
+      Size.Width = 1024.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Button1: TButton
+        Action = Action_primeiro
+        Align = Left
+        Enabled = True
+        Images = ImageList_1
+        ImageIndex = -1
+        Size.Width = 50.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+      object Button2: TButton
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Button1'
+      end
+    end
+  end
+  object ActionList_1: TActionList
+    Images = ImageList_1
+    Left = 536
+    Top = 360
+    object Action_primeiro: TAction
+      Text = 'Primeiro'
+      Hint = 'Primeiro Registro'
+    end
+    object Action_anterior: TAction
+      Text = 'Anterior'
+    end
+    object Action3: TAction
+      Text = 'Action3'
+    end
+    object Action4: TAction
+      Text = 'Action4'
+    end
+  end
+  object ImageList_1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 504
+    Top = 360
+  end
+end

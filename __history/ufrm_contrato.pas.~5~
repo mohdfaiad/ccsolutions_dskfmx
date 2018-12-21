@@ -18,7 +18,7 @@ uses
   FMX.TabControl,
   FMX.Layouts,
 
-  ufrm_default_base, System.ImageList, FMX.ImgList, System.Actions, FMX.ActnList;
+  ufrm_default_base;
 
 type
   Tfrm_contrato = class(Tfrm_default_base)

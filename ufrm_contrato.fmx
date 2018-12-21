@@ -1,21 +1,4 @@
 inherited frm_contrato: Tfrm_contrato
   Caption = 'Manuten'#231#227'o: Contratos'
   DesignerMasterStyle = 0
-  inherited lytForm: TLayout
-    inherited tbctrlForm: TTabControl
-      Sizes = (
-        1024s
-        726s
-        1024s
-        726s)
-      inherited TabItem_pesquisar: TTabItem
-        ExplicitSize.cx = 70.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-      end
-      inherited TabItem_manutencao: TTabItem
-        ExplicitSize.cx = 87.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-      end
-    end
-  end
 end

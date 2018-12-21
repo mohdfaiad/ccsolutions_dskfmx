@@ -24,18 +24,23 @@ uses
   FMX.ImgList,
   FMX.ActnList,
 
-  ufrm_main_base;
+  ufrm_main_base, FMX.Objects;
 
 type
   Tfrm_main_base_menu = class(Tfrm_main_base)
-    MultiView_1: TMultiView;
+    MultiViewMain: TMultiView;
     Layout_rodape_1: TLayout;
     Layout_menu_1: TLayout;
     ListBox_menu_1: TListBox;
     Button_menu_1: TButton;
-    ListBoxItem_perfil_1: TListBoxItem;
+    ListBoxItem_perfil: TListBoxItem;
     GridPanelLayout_1: TGridPanelLayout;
     GridPanelLayout_2: TGridPanelLayout;
+    Rectangle_perfil_1: TRectangle;
+    Circle_foto_1: TCircle;
+    Label_nome: TLabel;
+    Label_email: TLabel;
+    Brush1: TBrushObject;
   private
     { Private declarations }
   public

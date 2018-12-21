@@ -29,7 +29,17 @@ uses
 
 type
   Tfrm_default_base = class(TForm)
+    tbctrlForm: TTabControl;
+    TabItem_pesquisar: TTabItem;
+    TabItem_manutencao: TTabItem;
     lytForm: TLayout;
+    ListView_1: TListView;
+    TabControl1: TTabControl;
+    TabItem_dados: TTabItem;
+    Panel1: TPanel;
+    ToolBar1: TToolBar;
+    Button1: TButton;
+    Button2: TButton;
     ActionList_1: TActionList;
     ImageList_1: TImageList;
     Action_primeiro: TAction;
