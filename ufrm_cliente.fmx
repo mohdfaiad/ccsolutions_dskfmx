@@ -1,0 +1,126 @@
+inherited frm_cliente: Tfrm_cliente
+  Caption = 'Manuten'#231#227'o: Clientes'
+  DesignerMasterStyle = 0
+  inherited lytForm: TLayout
+    inherited TabControl_1: TTabControl
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 1004.000000000000000000
+      Size.Height = 646.000000000000000000
+      Sizes = (
+        1004s
+        646s
+        1004s
+        646s)
+      inherited TabItem_registros: TTabItem
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited ListView_registro: TListView
+          Size.Width = 1004.000000000000000000
+          Size.Height = 646.000000000000000000
+        end
+      end
+      inherited TabItem_manutencao: TTabItem
+        ExplicitSize.cx = 87.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited TabControl_2: TTabControl
+          Size.Width = 1004.000000000000000000
+          Size.Height = 596.000000000000000000
+          Sizes = (
+            1004s
+            570s)
+          inherited TabItem_dados: TTabItem
+            ExplicitSize.cx = 54.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+          end
+        end
+        inherited GridPanelLayout1: TGridPanelLayout
+          Size.Width = 1004.000000000000000000
+        end
+      end
+    end
+    inherited Panel_1: TPanel
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 666.000000000000000000
+      Size.Width = 1004.000000000000000000
+    end
+  end
+  inherited ds: TDataSource
+    DataSet = clientSQL
+  end
+  inherited clientSQL: TRESTDWClientSQL
+    Active = True
+    DataBase = frm_dm.database
+    SQL.Strings = (
+      'call proc_cliente_read('#39#39');')
+    object clientSQLcli_codigo: TStringField
+      DisplayLabel = 'C'#243'd.'
+      FieldName = 'cli_codigo'
+      Size = 32
+    end
+    object clientSQLusuario_usr_codigo: TStringField
+      DisplayLabel = 'C'#243'd. Usu'#225'rio'
+      FieldName = 'usuario_usr_codigo'
+      Size = 32
+    end
+    object clientSQLcli_id: TLongWordField
+      DisplayLabel = 'ID'
+      FieldName = 'cli_id'
+    end
+    object clientSQLcli_nome: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'cli_nome'
+      Size = 125
+    end
+    object clientSQLcli_nome_fantasia: TStringField
+      DisplayLabel = 'Nome Fantasia'
+      FieldName = 'cli_nome_fantasia'
+      Size = 125
+    end
+    object clientSQLcli_tipo: TStringField
+      DisplayLabel = 'Tipo'
+      FieldName = 'cli_tipo'
+      Size = 2
+    end
+    object clientSQLcli_rgie: TStringField
+      DisplayLabel = 'RG/IE'
+      FieldName = 'cli_rgie'
+      Size = 25
+    end
+    object clientSQLcli_cpfcnpj: TStringField
+      DisplayLabel = 'CPF/CNPJ'
+      FieldName = 'cli_cpfcnpj'
+      Size = 25
+    end
+    object clientSQLcli_im: TStringField
+      DisplayLabel = 'IM'
+      FieldName = 'cli_im'
+      Size = 25
+    end
+    object clientSQLcli_suframa: TStringField
+      DisplayLabel = 'Suframa'
+      FieldName = 'cli_suframa'
+      Size = 25
+    end
+    object clientSQLcli_data: TDateField
+      DisplayLabel = 'Data Nasc./Abert.'
+      FieldName = 'cli_data'
+    end
+    object clientSQLcli_status: TShortintField
+      DisplayLabel = 'Status'
+      FieldName = 'cli_status'
+    end
+    object clientSQLcli_data_deletado: TDateTimeField
+      DisplayLabel = 'Dt. Deletado'
+      FieldName = 'cli_data_deletado'
+    end
+    object clientSQLcli_data_registro: TDateTimeField
+      DisplayLabel = 'Dt. Registro'
+      FieldName = 'cli_data_registro'
+    end
+  end
+end

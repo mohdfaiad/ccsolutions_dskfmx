@@ -42,6 +42,10 @@ type
     Label_nome: TLabel;
     Label_email: TLabel;
     Brush1: TBrushObject;
+    ListBoxGroupHeader_cadastros: TListBoxGroupHeader;
+    ListBoxGroupHeader_modulo: TListBoxGroupHeader;
+    ListBoxGroupHeader_relatorios: TListBoxGroupHeader;
+    ListBoxGroupHeader_utilitarios: TListBoxGroupHeader;
   private
     { Private declarations }
   public

@@ -1,0 +1,26 @@
+unit ufrm_dm;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes;
+
+type
+  Tfrm_dm = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_dm: Tfrm_dm;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

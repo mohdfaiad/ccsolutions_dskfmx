@@ -1,0 +1,201 @@
+inherited frm_main_base_menu: Tfrm_main_base_menu
+  Caption = 'Base Menu'
+  DesignerMasterStyle = 0
+  inherited lytMain: TLayout
+    TabOrder = 1
+    inherited ToolBar_Top1: TToolBar
+      StyleLookup = 'toolbarstyle'
+      object Button_menu_1: TButton
+        Align = Left
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'drawertoolbutton'
+        TabOrder = 0
+      end
+    end
+    inherited lytContainer: TLayout
+      Margins.Top = 5.000000000000000000
+      Size.Height = 666.000000000000000000
+    end
+  end
+  object Brush1: TBrushObject [1]
+    StyleName = 'Brush1'
+    Brush.Color = xFFCCCCCC
+    Left = 104
+    Top = 72
+  end
+  object MultiViewMain: TMultiView [2]
+    MasterButton = Button_menu_1
+    Mode = Drawer
+    NavigationPaneOptions.CollapsedWidth = 300.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 726.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout_rodape_1: TLayout
+      Align = Bottom
+      Position.Y = 676.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object Layout_menu_1: TLayout
+      Align = Client
+      Size.Width = 350.000000000000000000
+      Size.Height = 676.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object ListBox_menu_1: TListBox
+        Align = Client
+        Size.Width = 350.000000000000000000
+        Size.Height = 676.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 346.000000000000000000
+        Viewport.Height = 672.000000000000000000
+        object ListBoxItem_perfil: TListBoxItem
+          Size.Width = 346.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Rectangle_perfil_1: TRectangle
+            Align = Client
+            Fill.Color = xFFD6E0E5
+            Size.Width = 346.000000000000000000
+            Size.Height = 150.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFCCCCCC
+            object GridPanelLayout_1: TGridPanelLayout
+              Align = Client
+              Size.Width = 346.000000000000000000
+              Size.Height = 150.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  Value = 100.000000000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = GridPanelLayout_2
+                  Row = 0
+                end
+                item
+                  Column = 0
+                  Control = Label_nome
+                  Row = 1
+                end
+                item
+                  Column = 0
+                  Control = Label_email
+                  Row = 2
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 25.000000000000000000
+                end
+                item
+                  SizeStyle = Absolute
+                  Value = 25.000000000000000000
+                end
+                item
+                  SizeStyle = Auto
+                end>
+              object GridPanelLayout_2: TGridPanelLayout
+                Align = Client
+                Size.Width = 346.000000000000000000
+                Size.Height = 100.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                ColumnCollection = <
+                  item
+                    Value = 34.999999999999960000
+                  end
+                  item
+                    Value = 65.000000000000030000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = Circle_foto_1
+                    Row = 0
+                  end>
+                RowCollection = <
+                  item
+                    Value = 100.000000000000000000
+                  end>
+                object Circle_foto_1: TCircle
+                  Align = Client
+                  Margins.Left = 10.000000000000000000
+                  Margins.Top = 10.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Size.Width = 101.099998474121100000
+                  Size.Height = 80.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object Label_nome: TLabel
+                Align = Client
+                StyledSettings = [Family, Size, FontColor]
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 331.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                Text = 'Label_nome'
+                TabOrder = 1
+              end
+              object Label_email: TLabel
+                Align = Client
+                Margins.Left = 10.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 331.000000000000000000
+                Size.Height = 15.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Label_email'
+                TabOrder = 2
+              end
+            end
+          end
+        end
+        object ListBoxGroupHeader_cadastros: TListBoxGroupHeader
+          Position.Y = 150.000000000000000000
+          TabOrder = 1
+          Text = 'Cadastros'
+        end
+        object ListBoxGroupHeader_modulo: TListBoxGroupHeader
+          Position.Y = 169.000000000000000000
+          TabOrder = 2
+          Text = 'Modulo'
+        end
+        object ListBoxGroupHeader_relatorios: TListBoxGroupHeader
+          Position.Y = 188.000000000000000000
+          TabOrder = 3
+          Text = 'Relat'#243'rios'
+        end
+        object ListBoxGroupHeader_utilitarios: TListBoxGroupHeader
+          Position.Y = 207.000000000000000000
+          TabOrder = 4
+          Text = 'Utilit'#225'rios'
+        end
+      end
+    end
+  end
+end

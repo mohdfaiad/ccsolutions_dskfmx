@@ -1,0 +1,33 @@
+inherited frm_contrato: Tfrm_contrato
+  Caption = 'Manuten'#231#227'o: Contratos'
+  DesignerMasterStyle = 0
+  inherited lytForm: TLayout
+    inherited TabControl_1: TTabControl
+      Sizes = (
+        1004s
+        646s
+        1004s
+        646s)
+      inherited TabItem_registros: TTabItem
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      inherited TabItem_manutencao: TTabItem
+        ExplicitSize.cx = 87.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited TabControl_2: TTabControl
+          Sizes = (
+            1004s
+            570s)
+          inherited TabItem_dados: TTabItem
+            ExplicitSize.cx = 54.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited clientsql: TRESTDWClientSQL
+    DataBase = frm_dm.database
+  end
+end

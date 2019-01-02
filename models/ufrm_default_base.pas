@@ -9,6 +9,10 @@ uses
   System.Classes,
   System.Variants,
   System.Rtti,
+  System.Actions,
+  System.ImageList,
+
+  Data.DB,
 
   FMX.Types,
   FMX.Controls,
@@ -23,19 +27,55 @@ uses
   FMX.Grid,
   FMX.Layouts,
   FMX.ListBox,
-  FMX.Edit, FMX.ListView.Types, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.ListView, System.Actions, FMX.ActnList,
-  System.ImageList, FMX.ImgList;
+  FMX.Edit,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ListView,
+  FMX.ActnList,
+  FMX.ImgList,
+
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, uDWConstsData, uRESTDWPoolerDB, uDWAbout;
 
 type
   Tfrm_default_base = class(TForm)
     lytForm: TLayout;
     ActionList_1: TActionList;
     ImageList_1: TImageList;
-    Action_primeiro: TAction;
-    Action_anterior: TAction;
-    Action3: TAction;
-    Action4: TAction;
+    TabControl_1: TTabControl;
+    Panel_1: TPanel;
+    TabItem_registros: TTabItem;
+    TabItem_manutencao: TTabItem;
+    ListView_registro: TListView;
+    Button_inserir: TButton;
+    Button_salvar: TButton;
+    Button_cancelar: TButton;
+    Button_fechar: TButton;
+    Action_inserir: TAction;
+    Action_salvar: TAction;
+    Action_cancelar: TAction;
+    Action_fechar: TAction;
+    TabControl_2: TTabControl;
+    TabItem_dados: TTabItem;
+    ChangeTabAction_1: TChangeTabAction;
+    GridPanelLayout1: TGridPanelLayout;
+    Label_id: TLabel;
+    Label_dt_registro: TLabel;
+    Edit_id: TEdit;
+    Edit_dt_registro: TEdit;
+    ds: TDataSource;
+    clientSQL: TRESTDWClientSQL;
+    storedProc: TRESTDWStoredProc;
+    procedure ListView_registroDblClick(Sender: TObject);
+    procedure ListView_registroClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,5 +88,15 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure Tfrm_default_base.ListView_registroClick(Sender: TObject);
+begin
+  ChangeTabAction_1.Execute;
+end;
+
+procedure Tfrm_default_base.ListView_registroDblClick(Sender: TObject);
+begin
+  ChangeTabAction_1.Execute;
+end;
 
 end.

@@ -1,0 +1,61 @@
+unit ufrm_cliente;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.Actions,
+  System.ImageList,
+
+  FMX.Types,
+  FMX.Graphics,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Dialogs,
+  FMX.StdCtrls,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ImgList,
+  FMX.TabControl,
+  FMX.ActnList,
+  FMX.Edit,
+  FMX.Controls.Presentation,
+  FMX.Layouts,
+  FMX.ListView,
+
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,
+
+  Data.DB,
+
+  ufrm_default_base,
+  ufrm_dm, uDWConstsData, uRESTDWPoolerDB;
+
+type
+  Tfrm_cliente = class(Tfrm_default_base)
+  private
+
+  public
+
+  end;
+
+var
+  frm_cliente: Tfrm_cliente;
+
+implementation
+
+{$R *.fmx}
+
+end.

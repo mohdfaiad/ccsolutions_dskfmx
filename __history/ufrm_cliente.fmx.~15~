@@ -1,0 +1,77 @@
+inherited frm_cliente: Tfrm_cliente
+  Caption = 'Manuten'#231#227'o: Clientes'
+  DesignerMasterStyle = 0
+  inherited lytForm: TLayout
+    inherited TabControl_1: TTabControl
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 1004.000000000000000000
+      Size.Height = 646.000000000000000000
+      Sizes = (
+        1004s
+        646s
+        1004s
+        646s)
+      inherited TabItem_registros: TTabItem
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited ListView_registro: TListView
+          Size.Width = 1004.000000000000000000
+          Size.Height = 646.000000000000000000
+        end
+      end
+      inherited TabItem_manutencao: TTabItem
+        ExplicitSize.cx = 87.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited TabControl_2: TTabControl
+          Size.Width = 1004.000000000000000000
+          Size.Height = 596.000000000000000000
+          Sizes = (
+            1004s
+            570s)
+          inherited TabItem_dados: TTabItem
+            ExplicitSize.cx = 54.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+          end
+        end
+        inherited GridPanelLayout1: TGridPanelLayout
+          Size.Width = 1004.000000000000000000
+        end
+      end
+    end
+    inherited Panel_1: TPanel
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 666.000000000000000000
+      Size.Width = 1004.000000000000000000
+    end
+  end
+  object clientSQL: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    MasterCascadeDelete = True
+    Datapacks = -1
+    DataCache = False
+    Params = <>
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    ActionCursor = crSQLWait
+    ReflectChanges = True
+    Left = 880
+    Top = 16
+  end
+end

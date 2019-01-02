@@ -25,10 +25,16 @@ uses
   FMX.MultiView,
   FMX.Controls.Presentation,
 
-  ufrm_main_base_menu;
+  ufrm_main_base_menu,
+
+  ufrm_contrato,
+  ufrm_login;
 
 type
   Tfrm_main = class(Tfrm_main_base_menu)
+    ListBoxItem_contrato: TListBoxItem;
+    procedure ListBoxItem_contratoClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     FFormAtivo: TForm;
     procedure AbrirForm(aForm: TComponentClass);
@@ -61,6 +67,24 @@ begin
   end;
 
   MultiViewmain.HideMaster;
+end;
+
+procedure Tfrm_main.FormCreate(Sender: TObject);
+begin
+  inherited;
+  frm_login := Tfrm_login.Create(Self);
+  frm_login.ShowModal;
+
+  if frm_login.ModalResult <> mrOk then begin
+//    MessageDlg('Você não se autenticou. A aplicação será encerrada!', mtWarning, [mbOK], 0);
+    Application.Terminate;
+  end;
+end;
+
+procedure Tfrm_main.ListBoxItem_contratoClick(Sender: TObject);
+begin
+  inherited;
+  AbrirForm(Tfrm_contrato);
 end;
 
 end.

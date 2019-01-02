@@ -8,6 +8,10 @@ uses
   System.UITypes,
   System.Classes,
   System.Variants,
+  System.ImageList,
+  System.Actions,
+
+  Data.DB,
 
   FMX.Types,
   FMX.Graphics,
@@ -17,8 +21,27 @@ uses
   FMX.StdCtrls,
   FMX.TabControl,
   FMX.Layouts,
+  FMX.ImgList,
+  FMX.ActnList,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.Edit,
+  FMX.Controls.Presentation,
+  FMX.ListView,
 
-  ufrm_default_base, System.ImageList, FMX.ImgList, System.Actions, FMX.ActnList;
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,
+
+  ufrm_default_base,
+  ufrm_dm;
 
 type
   Tfrm_contrato = class(Tfrm_default_base)

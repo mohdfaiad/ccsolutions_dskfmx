@@ -1,0 +1,29 @@
+object frm_dm: Tfrm_dm
+  OldCreateOrder = False
+  Height = 409
+  Width = 486
+  object database: TRESTDWDataBase
+    Active = True
+    Compression = True
+    MyIP = '127.0.0.1'
+    Login = 'webservice'
+    Password = 'webservicePa$$word'
+    Proxy = False
+    ProxyOptions.Port = 8888
+    PoolerService = '127.0.0.1'
+    PoolerPort = 80
+    PoolerName = 'Tfrm_dm.poolerDB'
+    StateConnection.AutoCheck = False
+    StateConnection.InTime = 1000
+    RequestTimeOut = 10000
+    EncodeStrings = True
+    Encoding = esUtf8
+    StrsTrim = False
+    StrsEmpty2Null = False
+    StrsTrim2Len = True
+    ParamCreate = True
+    ClientConnectionDefs.Active = False
+    Left = 32
+    Top = 24
+  end
+end

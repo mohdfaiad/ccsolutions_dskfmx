@@ -1,0 +1,78 @@
+unit ufrm_cliente;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.Actions,
+  System.ImageList,
+
+  FMX.Types,
+  FMX.Graphics,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Dialogs,
+  FMX.StdCtrls,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ImgList,
+  FMX.TabControl,
+  FMX.ActnList,
+  FMX.Edit,
+  FMX.Controls.Presentation,
+  FMX.Layouts,
+  FMX.ListView,
+
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,
+
+  uDWAbout,
+  uRESTDWPoolerDB,
+  uDWConstsData,
+
+  Data.DB,
+
+  ufrm_default_base,
+  ufrm_dm, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope;
+
+type
+  Tfrm_cliente = class(Tfrm_default_base)
+    clientsqlcli_codigo: TStringField;
+    clientsqlusuario_usr_codigo: TStringField;
+    clientsqlcli_nome: TStringField;
+    clientsqlcli_nome_fantasia: TStringField;
+    clientsqlcli_tipo: TStringField;
+    clientsqlcli_rgie: TStringField;
+    clientsqlcli_cpfcnpj: TStringField;
+    clientsqlcli_data_deletado: TDateTimeField;
+    clientsqlcli_data_registro: TDateTimeField;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkListControlToField1: TLinkListControlToField;
+  private
+
+  public
+
+  end;
+
+var
+  frm_cliente: Tfrm_cliente;
+
+implementation
+
+{$R *.fmx}
+
+end.

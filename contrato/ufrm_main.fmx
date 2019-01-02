@@ -1,5 +1,6 @@
 inherited frm_main: Tfrm_main
   Caption = 'Modulo Contrato - CCS.'
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   inherited MultiViewMain: TMultiView
     Size.Width = 300.000000000000000000
@@ -13,13 +14,41 @@ inherited frm_main: Tfrm_main
         Viewport.Width = 296.000000000000000000
         Viewport.Height = 672.000000000000000000
         inherited ListBoxItem_perfil: TListBoxItem
+          Size.Width = 296.000000000000000000
           inherited Rectangle_perfil_1: TRectangle
+            Size.Width = 296.000000000000000000
             inherited GridPanelLayout_1: TGridPanelLayout
+              Size.Width = 296.000000000000000000
+              inherited GridPanelLayout_2: TGridPanelLayout
+                Size.Width = 296.000000000000000000
+                inherited Circle_foto_1: TCircle
+                  Size.Width = 83.599998474121090000
+                end
+              end
               inherited Label_nome: TLabel
+                Size.Width = 281.000000000000000000
                 TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+              inherited Label_email: TLabel
+                Size.Width = 281.000000000000000000
               end
             end
           end
+        end
+        object ListBoxItem_contrato: TListBoxItem [2]
+          Position.Y = 169.000000000000000000
+          TabOrder = 5
+          Text = 'Contrato'
+          OnClick = ListBoxItem_contratoClick
+        end
+        inherited ListBoxGroupHeader_modulo: TListBoxGroupHeader
+          Position.Y = 188.000000000000000000
+        end
+        inherited ListBoxGroupHeader_relatorios: TListBoxGroupHeader
+          Position.Y = 207.000000000000000000
+        end
+        inherited ListBoxGroupHeader_utilitarios: TListBoxGroupHeader
+          Position.Y = 226.000000000000000000
         end
       end
     end

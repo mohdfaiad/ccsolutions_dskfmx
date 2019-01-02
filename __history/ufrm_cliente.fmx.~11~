@@ -1,0 +1,79 @@
+inherited frm_cliente: Tfrm_cliente
+  Caption = 'Manuten'#231#227'o: Clientes'
+  DesignerMasterStyle = 0
+  inherited lytForm: TLayout
+    inherited TabControl_1: TTabControl
+      Sizes = (
+        1004s
+        646s
+        1004s
+        646s)
+      inherited TabItem_registros: TTabItem
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      inherited TabItem_manutencao: TTabItem
+        ExplicitSize.cx = 87.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited TabControl_2: TTabControl
+          Sizes = (
+            1004s
+            570s)
+          inherited TabItem_dados: TTabItem
+            ExplicitSize.cx = 54.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited clientsql: TRESTDWClientSQL
+    Active = True
+    DataBase = frm_dm.database
+    SQL.Strings = (
+      'call proc_cliente_read('#39#39');')
+    object clientsqlcli_codigo: TStringField
+      DisplayLabel = 'C'#243'd.'
+      FieldName = 'cli_codigo'
+      Size = 32
+    end
+    object clientsqlusuario_usr_codigo: TStringField
+      DisplayLabel = 'C'#243'd. Usu'#225'rio'
+      FieldName = 'usuario_usr_codigo'
+      Size = 32
+    end
+    object clientsqlcli_nome: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'cli_nome'
+      Size = 125
+    end
+    object clientsqlcli_nome_fantasia: TStringField
+      DisplayLabel = 'Nome Fantasia'
+      FieldName = 'cli_nome_fantasia'
+      Size = 125
+    end
+    object clientsqlcli_tipo: TStringField
+      DisplayLabel = 'Tipo'
+      FieldName = 'cli_tipo'
+      Size = 2
+    end
+    object clientsqlcli_rgie: TStringField
+      DisplayLabel = 'RG/IE'
+      FieldName = 'cli_rgie'
+      Size = 25
+    end
+    object clientsqlcli_cpfcnpj: TStringField
+      DisplayLabel = 'CPF/CNPJ'
+      FieldName = 'cli_cpfcnpj'
+      Size = 25
+    end
+    object clientsqlcli_data_deletado: TDateTimeField
+      DisplayLabel = 'Dt. Deletado'
+      FieldName = 'cli_data_deletado'
+    end
+    object clientsqlcli_data_registro: TDateTimeField
+      DisplayLabel = 'Dt. Registro'
+      FieldName = 'cli_data_registro'
+    end
+  end
+end
