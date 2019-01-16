@@ -1,0 +1,543 @@
+object frm_configurar: Tfrm_configurar
+  Left = 0
+  Top = 0
+  Caption = 'M'#243'dulo Configura'#231#245'es - CCS.'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  ShowFullScreenIcon = True
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 640.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Gerar Arquivos de Configura'#231#245'es'
+      TabOrder = 0
+    end
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 458.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 358.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabIndex = 2
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    Sizes = (
+      640s
+      332s
+      640s
+      332s
+      640s
+      332s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.HorzAlign = Leading
+      IsSelected = False
+      Size.Width = 106.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Banco de Dados'
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Tipo'
+          TabOrder = 0
+          object ComboBox_db_tipo: TComboBox
+            Align = Bottom
+            Items.Strings = (
+              'MySQL')
+            ItemIndex = 0
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'comboboxstyle'
+            TabOrder = 0
+          end
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Nome do Banco'
+          TabOrder = 0
+          object Edit_db_nomebanco: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'dbhost'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Layout3: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 95.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label4: TLabel
+          Align = Left
+          Size.Width = 305.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Endere'#231'o do Servidor'
+          TabOrder = 0
+          object Edit_db_enderecoservidor: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = '127.0.0.1'
+            Position.Y = 18.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label7: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 310.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Porta'
+          TabOrder = 1
+          object Edit_db_porta: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = '3306'
+            Position.Y = 18.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Layout5: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 140.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label6: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Usu'#225'rio'
+          TabOrder = 0
+          object Edit_db_usuario: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label5: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 155.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Senha'
+          TabOrder = 1
+          object Edit_db_senha: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.HorzAlign = Leading
+      IsSelected = False
+      Size.Width = 100.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Servidor - WBS'
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout6: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label11: TLabel
+          Align = Left
+          Size.Width = 100.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Porta'
+          TabOrder = 0
+          object Edit_swbs_porta: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = '3306'
+            Position.Y = 18.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Layout4: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label8: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Usu'#225'rio'
+          TabOrder = 0
+          object Edit_swbs_usuario: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label9: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 155.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Senha'
+          TabOrder = 1
+          object Edit_swbs_senha: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object CheckBox_swbs_autenticacao: TCheckBox
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 17.000000000000000000
+          Position.X = 310.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Autentica'#231#227'o'
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.HorzAlign = Leading
+      IsSelected = True
+      Size.Width = 93.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Cliente - WBS'
+      ExplicitSize.cx = 93.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout7: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label10: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 310.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Porta'
+          TabOrder = 1
+          object Edit_cwbs_porta: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = '3306'
+            Position.Y = 18.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label14: TLabel
+          Align = Left
+          Size.Width = 305.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Endere'#231'o'
+          TabOrder = 0
+          object Edit_cwbs_endereco: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = '3306'
+            Position.Y = 18.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Layout8: TLayout
+        Align = Top
+        Margins.Left = 8.000000000000000000
+        Margins.Right = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label12: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Usu'#225'rio'
+          TabOrder = 0
+          object Edit_cwbs_usuario: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Label13: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 155.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Senha'
+          TabOrder = 1
+          object Edit_cwbs_senha: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Bottom
+            TabOrder = 0
+            Text = 'root'
+            Position.Y = 18.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object CheckBox_cwbs_autenticacao: TCheckBox
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 17.000000000000000000
+          Position.X = 310.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 99.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Autentica'#231#227'o'
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = Bottom
+    Position.Y = 408.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Button_fechar: TButton
+      Action = Action_fechar
+      Anchors = [akLeft, akTop, akRight]
+      Enabled = True
+      Images = ImageList1
+      ImageIndex = -1
+      Position.X = 552.000000000000000000
+      Position.Y = 13.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object Button_salvar: TButton
+      Action = Action_salvar
+      Enabled = True
+      Images = ImageList1
+      ImageIndex = -1
+      Position.X = 8.000000000000000000
+      Position.Y = 13.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+  end
+  object ImageList1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 584
+    Top = 104
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    Left = 584
+    Top = 160
+    object Action_salvar: TAction
+      Text = 'Salvar'
+      Hint = 'Salvar Altera'#231#245'es'
+      OnExecute = Action_salvarExecute
+    end
+    object Action_cancelar: TAction
+      Text = 'Cancelar'
+      Hint = 'Cancelar Altera'#231#245'es'
+    end
+    object Action_fechar: TAction
+      Text = 'Fechar'
+      Hint = 'Fechar'
+      OnExecute = Action_fecharExecute
+    end
+  end
+end
